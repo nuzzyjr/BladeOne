@@ -1,0 +1,23 @@
+<?php $_shouldextend[1]=1; ?>
+
+<?php $this->startSection('header'); ?>
+ <h1>Heading lol</h1>
+
+<?php $this->stopSection(); ?>
+
+<?php $this->startSection('footer'); ?>
+ <h4>Greg</h4>
+<?php $this->stopSection(); ?>
+
+
+<?php $this->startSection('content'); ?>
+ <p>aoifoawpn fpoiajfpoiawj fpoiwaj foipwaj foipawj fpoiaj fopiwj fopiaj foifj </p>
+ <p>aoifoawpn fpoiajfpoiawj fpoiwaj foipwaj foipawj fpoiaj fopiwj fopiaj foifj </p>
+ <p>aoifoawpn fpoiajfpoiawj fpoiwaj foipwaj foipawj fpoiaj fopiwj fopiaj foifj </p>
+ <p>aoifoawpn fpoiajfpoiawj fpoiwaj foipwaj foipawj fpoiaj fopiwj fopiaj foifj </p>
+ <p>aoifoawpn fpoiajfpoiawj fpoiwaj foipwaj foipawj fpoiaj fopiwj fopiaj foifj </p>
+ <p>aoifoawpn fpoiajfpoiawj fpoiwaj foipwaj foipawj fpoiaj fopiwj fopiaj foifj </p>
+
+<?php $this->stopSection(); ?>
+
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('layouts.app'); } ?>

@@ -1,0 +1,23 @@
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Styles\mystyles.css"/>
+</head>
+<body>
+ <div class="header">
+ <?php echo $this->yieldContent('header'); ?>
+ </div>
+
+ <div class="content">
+ <?php echo $this->yieldContent('content'); ?>
+ </div>
+
+ <div class="footer">
+ <?php echo $this->yieldContent('footer'); ?>
+ </div>
+
+ <div>
+ <?php echo $this->yieldContent('page_links'); ?>
+ </div>
+</body>
+</html>
