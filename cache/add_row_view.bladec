@@ -3,8 +3,7 @@
 
 <?php $this->startSection('content'); ?>
 
-
  
 
 <?php $this->stopSection(); ?>
-<?php if (isset($_shouldextend[1])) { echo $this->runChild("layouts.app_orange"); } ?>
+<?php if (isset($_shouldextend[1])) { echo $this->runChild("layouts.app"); } ?>
