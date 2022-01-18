@@ -1,8 +1,28 @@
 .header{
     width:100%;
-    background-color:pink;
+    background-color:rgb(189, 189, 189);
 }  
 .footer{
     width:100%;
-    background-color:pink;
+    background-color:rgb(189, 189, 189);
 } 
+
+
+.third{
+    width:32.9%;
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.third input{
+    font-size: 18px;
+    padding:10px;
+}
+
+
+.blackback {
+    background-color: rgb(189, 189, 189);
+    border-radius: 5px;
+    padding:20px;
+    
+}

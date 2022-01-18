@@ -10,7 +10,7 @@
  <h1>Heading lol</h1></br>
  <button class="btn btn-primary" onclick="location = href='home.php'">Home</button>
  <button class="btn btn-secondary" onclick="location = href='view_table.php'">View Table</button>
- <button class="btn btn-secondary" onclick="location = href='add_row.php'">Add row</button>
+ <button class="btn btn-secondary" onclick="location = href='add_row.php'">Add record</button>
  <button class="btn btn-secondary" onclick="location = href='edit_table.php'">Edit Table</button>
  
 
@@ -20,7 +20,7 @@
  <?php echo $this->yieldContent('content'); ?>
  </div>
 
- <div class="footer">
+ <div class="footer" style="height: 200px;">
  <h4>Greg</h4>
  </div>
 

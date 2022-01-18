@@ -13,24 +13,21 @@
         $conn = mysqli_connect("localhost","root","","phpcrud")
         or die ("Sorry, can't connect.");
 
-        $new_fname = strip_tags($_POST['fname']);
-        $new_sname = strip_tags($_POST['sname']);
-        $new_age = strip_tags($_POST['age']);
-        $id = $_POST['id'];
+        $fname = strip_tags($_POST['fname']);
+        $sname = strip_tags($_POST['sname']);
+        $age = strip_tags($_POST['age']);
+    
 
-        $query = "UPDATE people
-                    SET fname='$new_fname', sname='$new_sname', age='$new_age'
-                    WHERE id='$id' ";
+        $query = "INSERT INTO people (fname, sname, age) VALUES ('".$fname."','".$sname."','".$age."'  )";
 
         mysqli_query($conn, $query);
-
         
     ?>
   
     <div style="width:50%; margin:auto;">
-        <h1 style="padding-top :50px;">You have edited the record.</h1>
+        <h1 style="padding-top :50px;">You have added a record.</h1>
     </br>
-    <button class="btn btn-primary" onclick = "location.href = 'edit_table.php'" >Return</button>
+    <button class="btn btn-primary" onclick = "location.href = 'add_row.php'" >Return</button>
     </div>
 </body>
 </html>
